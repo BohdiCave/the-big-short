@@ -1,6 +1,6 @@
 {
   "rewrites": [{
-    "source": "/r/:id", 
+    "source": "/bdcv=:id", 
     "destination": "/api/redirect?id=:id"
   }] 
 }
