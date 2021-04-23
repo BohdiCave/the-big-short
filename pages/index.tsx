@@ -10,6 +10,12 @@ const {Title} = Typography;
 type ShortenLinkResponse = {
   short_link: string;
 }
+
+type ShortenLinkError = {
+  error: string;
+  error_description: string;
+}
+
 type FormValues = {
   link: string;
 }
