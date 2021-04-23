@@ -1,5 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
+import {connectToDb} from './_connector';
+
+export default async (req, res) => {
+  await connectToDb();
   res.status(200).json({ name: 'John Doe' })
 }
